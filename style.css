@@ -1,98 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins";
-  }
-  
-  :root {
-    --primaryColor: #6070ff;
-    --headingTextColor: #172B4D;
-    --bodyTextColor: #344563;
-    --backgroundColor: #F7F7F9;
-  }
-  
-  body {
-    background-color: #f7f7f9;
-    height: 100vh;
-  }
-  
-  h2 {
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 52px;
-    color: var(--headingTextColor);
-  }
-  
-  p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  
-  @media screen and (min-width: 340px) {
-  
-    #header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: white;
-      padding: 4px;
-    }
-  
-    .logo-placeholder {
-      padding: 10px 12px;
-      margin-left: 12px;
-    }
-  
-    .logo {
-      color: var(--primaryColor);
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 20px;
-    }
-  
-    .menu {
-      padding: 8px;
-      width: 24px;
-      height: 24px;
-      margin-right: 24px;
-    }
-  
-    .material-symbols-outlined {
-      color: var(--primaryColor);
-    }
-  
-    #headline_section {
-      padding-top: 2rem;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 114px 24px;
-      gap: 12px;
-      /* justify-content: center; */
-      background-image: url(./images/header-shapes\ mobile.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-radius: 0 0 0 5rem;
-    }
-  
-    .headline {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 2rem;
-      padding: 1rem;
-    }
-  
-    .social_icons {
-      display: flex;
-      gap: 1rem;
-    }
-  
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #f7f7f9;
+  height: 718px;
+  left: 0;
+  top: 0;
+}
+
+.heading-large {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+
+header {
+  background-color: #fff;
+  color: #6070ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: inherit;
+  left: 76px;
+}
+
+.headline-main {
+  min-height: 615px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7%;
+  border-radius: 0 0 0 4em;
+  background-color: #fff;
+  background-image: url(./assets/header-shape.png);
+  background-size: 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.headline {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.about-headline {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.headline-heading {
+  margin: 10px 0;
+  display: flex;
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.headline-paragraph {
+  margin: 10px 0;
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.headline-sm-suport {
+  margin: 10px 0;
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #505f79;
+  list-style: none;
+}
+
+.social-icons > a,
+i {
+  text-decoration: none;
+  color: #505f79;
+  font-size: 1.25rem;
+  padding-right: 1em;
+}
+
