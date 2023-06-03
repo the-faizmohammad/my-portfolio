@@ -10,6 +10,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+ul {
+  list-style: none;
+}
+
 .hamburger {
   display: flex;
   align-items: center;
@@ -19,15 +23,9 @@ html {
   cursor: pointer;
 }
 
-ul {
-  list-style: none;
-}
-
 body {
+  /* position: relative; */
   background-color: #f7f7f9;
-  height: 718px;
-  left: 0;
-  top: 0;
 }
 
 .heading-large {
@@ -53,7 +51,8 @@ header {
 }
 
 .headline-main {
-  min-height: 615px;
+  max-height: 800px;
+  min-height: 550px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -61,7 +60,7 @@ header {
   padding: 0 7%;
   border-radius: 0 0 0 4em;
   background-color: #fff;
-  background-image: url(./assets/header-mobile.png);
+  background-image: url(./assets/header-shape.png);
   background-size: 100%;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -93,6 +92,7 @@ header {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  align-items: center;
   color: #172b4d;
 }
 
@@ -129,3 +129,288 @@ i {
   font-size: 1.25rem;
   padding-right: 1em;
 }
+
+/* Works Section Styling Starts Here */
+.works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.works-card {
+  color: #172b4d;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 8em 7% 0 7%;
+  padding: 1em 1em 2em 1em;
+}
+
+.works-card > img {
+  width: 100%;
+}
+
+.works-card-heading-large {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding: 0.25em 0;
+  font-style: normal;
+}
+
+.works-card-client {
+  display: flex;
+  align-items: center;
+  padding: 0.25em 0;
+}
+
+.works-card-client > p {
+  font-weight: 600;
+}
+
+.works-card-client-role {
+  color: #6b778c;
+  font-style: normal;
+  font-weight: 400;
+
+  /* font-size: 18px;
+  line-height: 24px; */
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.works-card-client-year {
+  color: #6b778c;
+  font-style: normal;
+  width: 38px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.works-card-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.25em 0;
+}
+
+.works-card-client > i {
+  color: #c1c7d0;
+  font-size: 0.5rem;
+}
+
+.works-card-client-counter {
+  font-size: 0.75em;
+  padding: 0 0.75em;
+  color: #7a869a;
+}
+
+.works-card-tags {
+  display: flex;
+  color: #6070ff;
+  margin: 0.25em 0;
+  list-style-type: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.works-card-tag {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin: 0 0.5rem 0 0;
+  padding: 0.25em 0.75em;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+button {
+  font-family: inherit;
+  background: #fff;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  width: auto;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6070ff;
+  box-shadow: 0 0.5em 1em #4053fc3d;
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
+/* Works Section Styling Ends Here */
+
+/* About Section Starts Here */
+.about {
+  background-color: #fff;
+  border-radius: 0 6em 0 0;
+  margin: 8em 0 0 0;
+}
+
+.headline-skill-container {
+  padding: 5em 7% 0 7%;
+}
+
+.about-heading-small {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skills-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  margin-left: -20px;
+  margin-right: -12px;
+}
+
+.skills-1 li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding-right: 150px;
+  margin-top: 8px;
+}
+
+.about-skills-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  width: 100%;
+}
+
+.about-skills-container > hr {
+  height: 2px;
+  background: #dfe1e6;
+  border: none;
+}
+
+.about-skill-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em 2em 0;
+}
+
+.about-skill-body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f7f7f9;
+  border-radius: 0.5em;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.about-skill-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  padding-left: 1em;
+  line-height: 20px;
+  color: #253858;
+}
+
+/* About Section Ends Here */
+
+/* Contact Me starts here */
+.contact-me-form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6em 0 0 0;
+  padding: 3em;
+  border-radius: 5em 0 0 0;
+  background-color: #6070ff;
+  background-image: url(./assets/M1.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.contact-me-form-heading {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+
+.contact-me-form-paragraph {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.75em;
+}
+
+.contact-me-form > input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #f7f7f9;
+  box-shadow: 0 0 2px #f7f7f9;
+}
+
+.contact-me-form-text-input {
+  margin-top: 0.75em;
+  padding: 0.75em;
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+.contact-me-form-button {
+  align-self: flex-start;
+}
+
+/* Contact me ends here */
