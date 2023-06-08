@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: poppins, serif;
+  font-family: "poppins", sans-serif;
 }
 
 main {
@@ -23,14 +23,12 @@ ul {
   color: #6070ff;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 25px;
 }
 
 .logo {
   text-decoration: none;
   color: inherit;
-  padding: calc(25px / 200px * 100%);
 }
 
 .menu-icon {
@@ -61,12 +59,12 @@ ul {
   .logo {
     width: 76px;
     height: 20px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #6070FF;
+    color: #6070ff;
   }
 
   .menu-icon {
@@ -88,13 +86,11 @@ ul {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 114px 24px;
   gap: 12px;
   position: absolute;
   width: 375px;
   height: 604px;
-  left: calc(50% - 375px/2);
+  left: calc(50% - 375px / 2);
   top: 92px;
 }
 
@@ -107,9 +103,9 @@ ul {
 }
 
 .headline-heading {
-  margin: 10px 0;
+  margin: 60px 0;
   display: flex;
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -121,7 +117,7 @@ ul {
 .paragraph {
   width: 327px;
   height: 146px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -148,7 +144,7 @@ ul {
   list-style: none;
 }
 
-.my-social-icons>a,
+.my-social-icons > a,
 i {
   text-decoration: none;
   color: #505f79;
@@ -167,8 +163,7 @@ i {
   justify-content: center;
   padding: 114px 24px;
   gap: 88px;
-  background-color: #F7F7F9;
-  ;
+  background-color: #f7f7f9;
 }
 
 .card {
@@ -180,8 +175,8 @@ i {
   gap: 12px;
   width: 327px;
   height: 552px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
@@ -199,7 +194,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 10px;
   gap: 12px;
   width: 295px;
   height: 288px;
@@ -216,15 +211,12 @@ i {
 .cardtitle {
   width: 295px;
   height: 36px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  /* or 138% */
-  /* Neutrals/N800 */
-  color: #172B4D;
-  /* Inside auto layout */
+  color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -234,7 +226,7 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 1px;
   gap: 12px;
   width: 327px;
   height: 32px;
@@ -248,7 +240,7 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 1px;
   gap: 12px;
   width: 320px;
   height: 32px;
@@ -257,7 +249,7 @@ i {
 .title {
   width: 55px;
   height: 16px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -267,18 +259,18 @@ i {
 
 .lists23 {
   height: 16px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .carddesc {
   width: 295px;
   height: 76px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -293,7 +285,7 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 1px;
   gap: 8px;
   width: 214px;
   height: 24px;
@@ -319,8 +311,7 @@ i {
   position: absolute;
   width: 126px;
   height: 48px;
-  /* left: 0px; */
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   text-decoration: none;
   color: #6070ff;
@@ -331,7 +322,7 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 1px;
   gap: 8px;
   width: 214px;
   height: 24px;
@@ -343,7 +334,7 @@ i {
   align-items: center;
   padding: 4px 12px;
   height: 24px;
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 8px;
   flex: none;
   order: 0;
@@ -368,7 +359,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 1px;
   gap: 12px;
   width: 327px;
   height: 346px;
@@ -378,7 +369,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 1px;
   width: 327px;
   height: 464.15px;
 }
@@ -391,14 +382,14 @@ i {
 .headtitle h1 {
   width: 327px;
   height: 35px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .headdesc {
@@ -421,7 +412,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 1px;
   gap: 16px;
   width: 200px;
   height: 80px;
@@ -429,12 +420,12 @@ i {
 
 .connect {
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .connect a {
@@ -446,7 +437,7 @@ i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 1px;
   width: 200px;
   height: 40px;
 }
@@ -462,10 +453,6 @@ i {
   border-radius: 8px;
 }
 
-.langlist {
-  list-style-type: none;
-}
-
 .resume {
   display: flex;
   flex-direction: row;
@@ -474,14 +461,14 @@ i {
   gap: 10px;
   width: 162px;
   height: 48px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
 }
 
 .resumelink {
   width: 138px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -490,7 +477,7 @@ i {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
   text-decoration: none;
 }
 
@@ -498,7 +485,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 10px;
   width: 327px;
   height: 320.15px;
 }
@@ -511,7 +498,7 @@ i {
 .langtitle h4 {
   position: absolute;
   height: 24px;
-  top: calc(50% - 24px/2);
+  top: calc(50% - 24px / 2);
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -519,7 +506,7 @@ i {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
   padding: 16px;
   flex: none;
   order: 0;
@@ -535,6 +522,7 @@ i {
   height: 248.15px;
   flex: none;
   order: 1;
+  list-style-type: none;
 }
 
 .langlistul {
@@ -553,17 +541,16 @@ i {
   display: flex;
   align-items: center;
   gap: 24px;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   list-style-type: none;
 }
 
 .langlistul li p {
   height: 24px;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
-  height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -596,7 +583,7 @@ i {
 .frames h4 {
   width: 237px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -604,5 +591,5 @@ i {
   display: flex;
   align-items: center;
   padding-left: 12px;
-  color: #000000;
+  color: #000;
 }
