@@ -226,6 +226,32 @@
       </div>
     </section>
   </section>
-  <!--header section start-->
+  <!--contact section start-->
+  <section>
+    <div class="contact-container">
+      <h1 class="contact-heading">Contact me</h1>
+      <p class="contact-paragraph">
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding, I'd love to help
+        with it.
+      </p>
+      <form class="contact-form" action="https://formspree.io" method="POST">
+        <input
+          class="contact-input"
+          required
+          maxlength="30"
+          name="name"
+          type="text"
+          placeholder="Your good name (max 30 characters)"
+        />
+        <input
+          class="contact-input"
+          required
+          name="email"
+          type="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          placeholder="Your Email address"
+        />
+  <!--contact section ends-->
 </body>
 </html>
