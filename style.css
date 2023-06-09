@@ -593,3 +593,66 @@ i {
   padding-left: 12px;
   color: #000;
 }
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6em 0 0 0;
+  padding: 3em;
+  border-radius: 5em 0 0 0;
+  background-color: #6070ff;
+  background-image: url(./assets/M1.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.contact-heading {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+.contact-paragraph {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.75em;
+}
+.contact-form > input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #f7f7f9;
+  box-shadow: 0 0 2px #f7f7f9;
+}
+.contact-input {
+  margin-top: 0.75em;
+  padding: 0.75em;
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+.contact-button {
+  align-self: flex-start;
+}
+.contact-input::placeholder {
+  font-size: 10px;
+  /* Default placeholder styles */
+}
+
