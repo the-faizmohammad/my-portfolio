@@ -123,6 +123,9 @@ Deploy this project on any websever
 - Twitter: [@twitterhandle](https://twitter.com/FaizMoh58742600)
 - LinkedIn: [LinkedIn](https://twitter.com/FaizMoh58742600)
 
+👤 **Tanmayi Manku**
+- GitHub: [@tan12082001](https://github.com/tan12082001)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
