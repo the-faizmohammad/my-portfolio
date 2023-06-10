@@ -609,6 +609,7 @@ i {
   top: 4500px;
   left: 0;
 }
+
 .contact-heading {
   text-align: center;
   margin-top: 0.75em;
@@ -618,6 +619,7 @@ i {
   font-size: 2.5rem;
   line-height: 52px;
 }
+
 .contact-paragraph {
   text-align: center;
   margin-top: 0.75em;
@@ -628,17 +630,20 @@ i {
   line-height: 28px;
   color: #ebebff;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
   margin-top: 0.75em;
 }
+
 .contact-form > input:focus,
 textarea:focus {
   outline: none !important;
   border: 1px solid #f7f7f9;
   box-shadow: 0 0 2px #f7f7f9;
 }
+
 .contact-input {
   margin-top: 0.75em;
   padding: 0.75em;
@@ -654,7 +659,6 @@ textarea:focus {
 
 .contact-input::placeholder {
   font-size: 10px;
-  /* Default placeholder styles */
 }
 
 .contact-button {
@@ -667,4 +671,3 @@ textarea:focus {
   border: none;
   margin: 20px 10px 10px 0;
 }
-
