@@ -605,6 +605,9 @@ i {
   background-image: url(./assets/M1.png);
   background-repeat: no-repeat;
   background-position-x: right;
+  position: absolute;
+  top: 4870px;
+  left: 0;
 }
 .contact-heading {
   text-align: center;
@@ -650,7 +653,15 @@ textarea:focus {
 }
 .contact-button {
   align-self: flex-start;
+  background: #fff;
+  width: 142px;
+  height: 48px;
+  border-radius: 8px;
+  color: #396df2;
+  border: none;
+  margin: 20px 10px 10px 0;
 }
+
 .contact-input::placeholder {
   font-size: 10px;
   /* Default placeholder styles */
