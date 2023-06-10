@@ -605,9 +605,6 @@ i {
   background-image: url(./assets/M1.png);
   background-repeat: no-repeat;
   background-position-x: right;
-  position: absolute;
-  top: 4870px;
-  left: 0;
 }
 .contact-heading {
   text-align: center;
