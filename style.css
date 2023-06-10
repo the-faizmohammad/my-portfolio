@@ -651,6 +651,12 @@ textarea:focus {
   line-height: 20px;
   border-radius: 8px;
 }
+
+.contact-input::placeholder {
+  font-size: 10px;
+  /* Default placeholder styles */
+}
+
 .contact-button {
   align-self: flex-start;
   background: #fff;
@@ -660,10 +666,5 @@ textarea:focus {
   color: #396df2;
   border: none;
   margin: 20px 10px 10px 0;
-}
-
-.contact-input::placeholder {
-  font-size: 10px;
-  /* Default placeholder styles */
 }
 
