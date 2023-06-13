@@ -674,3 +674,13 @@ textarea:focus {
   opacity: 0.6;
 }
 /* write your code below for hover */
+
+.contact-button:hover {
+  background-color: #868fdb;
+  cursor: pointer;
+}
+
+.contact-button:enabled {
+  opacity: 1;
+  cursor: pointer;
+}
