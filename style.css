@@ -615,7 +615,7 @@ i {
 
 .contact-heading {
   text-align: center;
-  margin-top: 0.90em;
+  margin-top: 0.9em;
   font-family: inherit;
   color: #fff;
   font-weight: 700;
@@ -633,7 +633,7 @@ i {
   line-height: 33px;
   color: #ebebff;
   width: 80%;
-  margin-left: 35px; ;
+  margin-left: 35px;
 }
 
 .contact-form {
@@ -700,3 +700,4 @@ button:disabled,
 button[disabled] {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
+}
