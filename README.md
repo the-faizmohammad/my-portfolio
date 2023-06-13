@@ -125,6 +125,8 @@ Deploy this project on any websever
 
 👤 **Tanmayi Manku**
 - GitHub: [@tan12082001](https://github.com/tan12082001)
+👤 **Ian Kiema**
+- GitHub: [@iankiema] (https://github.com/iankiema)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
