@@ -7,6 +7,10 @@
   font-family: "poppins", sans-serif;
 }
 
+body {
+  background-color: #f7f7f9;
+}
+
 main {
   width: 100%;
 }
@@ -592,4 +596,108 @@ i {
   align-items: center;
   padding-left: 12px;
   color: #000;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2em;
+  border-radius: 5em 0 0 0;
+  background-color: #6070ff;
+  background-image: url(./assets/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  position: absolute;
+  top: 4500px;
+  left: 0;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-top: 0.9em;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+
+.contact-paragraph {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  color: #ebebff;
+  width: 80%;
+  margin-left: 35px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.75em;
+  margin-bottom: 10px;
+}
+
+.contact-form > input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #f7f7f9;
+  box-shadow: 0 0 2px #f7f7f9;
+}
+
+.contact-input {
+  margin-top: 0.75em;
+  margin-left: 35px;
+  padding: 0.75em;
+  width: 80%;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+.contact-button {
+  align-self: flex-start;
+}
+
+button {
+  font-family: inherit;
+  background: #fff;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  width: auto;
+  margin-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6070ff;
+  box-shadow: 0 0.5em 1em #4053fc3d;
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
 }
