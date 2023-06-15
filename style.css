@@ -44,12 +44,6 @@ ul {
   cursor: pointer;
   font-size: 28px;
 }
-.nav-links {
-display:none;
-}
-.nav-link {
-  display:none;
-}
 
 .main {
   justify-content: center;
@@ -176,7 +170,6 @@ i {
 .snap {
   width: 295px;
   height: 220px;
-  background: #7f8cff;
   border-radius: 8px;
   flex: none;
   order: 0;
@@ -707,7 +700,7 @@ button[disabled] {
   .nav-link {
     margin: 0 10px;
     cursor: pointer;
-    color: #344563;
+    color: #6070ff;
     font-size: 15px;
   }
 
@@ -797,7 +790,7 @@ button[disabled] {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 2800px;
+    top: 3200px;
     padding: 214px 80px;
     gap: 5px;
     display: flex;
