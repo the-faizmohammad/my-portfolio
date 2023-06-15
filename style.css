@@ -42,38 +42,13 @@ ul {
   width: 10%;
   height: 10%;
   cursor: pointer;
+  font-size: 28px;
 }
-
-/* Responsive Styling */
-@media screen and (max-width: 767px) {
-  .logo {
-    font-size: 16px;
-  }
-
-  .menu-icon {
-    font-size: 20px;
-  }
+.nav-links {
+display:none;
 }
-
-@media screen and (min-width: 768px) {
-  .toolbar {
-    padding: 20px;
-  }
-
-  .logo {
-    width: 76px;
-    height: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    color: #6070ff;
-  }
-
-  .menu-icon {
-    font-size: 28px;
-  }
+.nav-link {
+  display:none;
 }
 
 .main {
@@ -171,6 +146,20 @@ i {
 }
 
 .card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  width: 327px;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.card-reverse{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -700,4 +689,158 @@ button:disabled,
 button[disabled] {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
+}
+
+
+@media screen and (min-width: 768px){
+  .nav-links {
+    position: absolute;
+    top: 8px;
+    right: 120px;
+    display: flex;
+    margin-top: 25px;
+    padding: 0;
+    color: #6070ff;
+    font-size: 18px;
+  }
+
+  .nav-link {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #344563;
+    font-size: 15px;
+  }
+
+  .menu-icon {
+    display:none;
+  }
+
+ .main {
+    width: 100%;
+    height: 800px;
+    top: 150px;
+    background-image: url(./assets/Header\ bg\ \(1\).png);
+    display: flex;
+    flex-direction: column;
+    left:5px;
+    right:5px;
+  }
+
+.my-headline {
+    margin: 20px 0;
+  }
+
+ .headline-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+.paragraph {
+    width: 600px;
+    height: auto;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+.social-support {
+    font-size: 22px;
+  }
+  
+  .my-social-icons {
+    font-size: 24px;
+  }
+
+.my-social-icons > a,
+  i {
+    font-size: 1.5rem;
+    padding-right: 1.5em;
+  }
+
+.works {
+    width: 100%;
+    height: 2788px;
+  }
+  .card {
+    width: 820px;
+    height: auto;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .card-reverse {
+    width: 820px;
+    height: auto;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+.snap {
+    width: 220px;
+    height: 300px;
+    flex: 1;
+    order: 1;
+    flex-grow: 1;
+  }
+
+  .block {
+    width: 380px;
+    height: auto;
+    padding: 16px;
+  }
+  .snap img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+.about-myself {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 2800px;
+    padding: 214px 80px;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+.top {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+.skill-list {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+ .langtitle h4 {
+    position: static;
+    top: auto;
+    height: auto;
+    padding: 8px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+.contact-container {
+    background-image: url(./assets/contact\ form\ background\ shapes\ \(1\).png);
+    background-position: center;
+    background-size: contain;
+    align-content: center;
+    padding: 10% 25%;
+    margin-top: 0;
+    background-repeat: no-repeat
+  }
+
+.contact-button {
+  align-self: center;
+}
 }
