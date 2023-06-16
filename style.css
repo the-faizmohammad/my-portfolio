@@ -153,7 +153,7 @@ i {
   border-radius: 16px;
 }
 
-.card-reverse{
+.card-reverse {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -325,7 +325,7 @@ i {
   flex: none;
   order: 0;
   flex-grow: 0;
-  color:#6070ff
+  color: #6070ff;
 }
 
 .about-myself {
@@ -685,8 +685,7 @@ button[disabled] {
   color: #5e6c84;
 }
 
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .nav-links {
     position: absolute;
     top: 8px;
@@ -706,54 +705,55 @@ button[disabled] {
   }
 
   .menu-icon {
-    display:none;
+    display: none;
   }
 
- .main {
+  .main {
     width: 100%;
     height: 800px;
     top: 150px;
-    background-image: url(./assets/Header\ bg\ \(1\).png);
+    background-image: url(./assets/desktop-bg.png);
     display: flex;
     flex-direction: column;
-    left:5px;
-    right:5px;
+    left: 5px;
+    right: 5px;
   }
 
-.my-headline {
+  .my-headline {
     margin: 20px 0;
   }
 
- .headline-heading {
+  .headline-heading {
     font-size: 40px;
     line-height: 50px;
   }
 
-.paragraph {
+  .paragraph {
     width: 600px;
     height: auto;
     font-size: 24px;
     line-height: 28px;
   }
 
-.social-support {
+  .social-support {
     font-size: 22px;
   }
-  
+
   .my-social-icons {
     font-size: 24px;
   }
 
-.my-social-icons > a,
+  .my-social-icons > a,
   i {
     font-size: 1.5rem;
     padding-right: 1.5em;
   }
 
-.works {
+  .works {
     width: 100%;
     height: 2788px;
   }
+
   .card {
     width: 820px;
     height: auto;
@@ -768,7 +768,7 @@ button[disabled] {
     align-items: flex-start;
   }
 
-.snap {
+  .snap {
     width: 220px;
     height: 300px;
     flex: 1;
@@ -781,13 +781,14 @@ button[disabled] {
     height: auto;
     padding: 16px;
   }
+
   .snap img {
     width: 100%;
     height: auto;
     border-radius: 8px;
   }
 
-.about-myself {
+  .about-myself {
     width: 100%;
     height: auto;
     position: absolute;
@@ -798,7 +799,7 @@ button[disabled] {
     flex-direction: row;
   }
 
-.top {
+  .top {
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -806,7 +807,7 @@ button[disabled] {
     align-items: flex-start;
   }
 
-.skill-list {
+  .skill-list {
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -815,7 +816,7 @@ button[disabled] {
     align-items: flex-start;
   }
 
- .langtitle h4 {
+  .langtitle h4 {
     position: static;
     top: auto;
     height: auto;
@@ -824,17 +825,17 @@ button[disabled] {
     line-height: 28px;
   }
 
-.contact-container {
-    background-image: url(./assets/contact\ form\ background\ shapes\ \(1\).png);
+  .contact-container {
+    background-image: url(./assets/desktop-contact.png);
     background-position: center;
     background-size: contain;
     align-content: center;
     padding: 10% 25%;
     margin-top: 0;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
   }
 
-.contact-button {
-  align-self: center;
-}
+  .contact-button {
+    align-self: center;
+  }
 }
