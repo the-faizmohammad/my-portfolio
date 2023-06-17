@@ -450,7 +450,6 @@ textarea:focus {
     gap: 24px;
     width: 1000px;
     height: 320px;
-    left:0px;
   }
 
   .menu-icon {
@@ -563,8 +562,8 @@ textarea:focus {
     margin-top: 0;
   }
 
-  .my-about-skills-container{
-    width:60%;
+  .my-about-skills-container {
+    width: 60%;
   }
 
   .Languages {
