@@ -15,15 +15,14 @@ ul {
 }
 
 .menu-icon {
- width: 42px;
- height: 40px;
- font-size: 24px;
- font-weight: bold;
- display: flex;
- align-items: center;
- justify-content: center;
- cursor: pointer;
-
+  width: 42px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 body {
@@ -31,14 +30,13 @@ body {
   background-color: #f7f7f9;
   overflow-x: hidden;
   position: relative;
-  
 }
 
 .my-heading-large {
   font-size: 2.6rem;
   line-height: 53px;
   font-weight: 700;
-  color: #172b4d;  
+  color: #172b4d;
 }
 
 header {
@@ -334,6 +332,7 @@ button[disabled] {
   justify-content: space-between;
   padding: 2em 1em 2em 0;
 }
+
 .my-about-skill-body {
   display: flex;
   align-items: center;
@@ -431,7 +430,7 @@ textarea:focus {
     margin: 0 0 0 100px;
     font-size: 18px;
   }
-  
+
   .my-headline-main {
     border-radius: 0 0 0 4em;
     background-color: #fff;
@@ -441,7 +440,7 @@ textarea:focus {
     background-repeat: no-repeat;
     height: 100vh;
   }
-  
+
   .headline-container {
     margin: 10px 0;
     display: flex;
@@ -452,11 +451,11 @@ textarea:focus {
     width: 754px;
     height: 268px;
   }
-  
+
   .menu-icon {
     display: none;
   }
-  
+
   .navigation-bar {
     position: absolute;
     top: 10px;
@@ -467,32 +466,32 @@ textarea:focus {
     color: #6070ff;
     font-size: 18px;
   }
-  
+
   .nav-item {
     margin: 0 10px;
     cursor: pointer;
     color: #344563;
     font-size: 15px;
   }
-  
+
   .social-icons {
     margin: 20px;
     margin-left: 55px;
     margin-top: 10px;
   }
-  
+
   header {
     padding: 23px;
     padding-bottom: 75px;
   }
-  
+
   .headline-text {
     margin: 10px 64px;
     font-size: 48px;
     align-items: center;
     color: #172b4d;
   }
-  
+
   .my-headline-paragraph {
     margin: 10px 0;
     font-family: 'Poppins'sans-serif;
@@ -503,16 +502,16 @@ textarea:focus {
     color: #344563;
     margin-left: 65px;
   }
-  
+
   .headline-connect {
     margin: 0 60px;
   }
-  
+
   .my-works-card > img {
     width: 100%;
     height: 400px;
   }
-  
+
   .my-works-card:nth-child(even) > img {
     order: 2;
   }
@@ -546,21 +545,22 @@ textarea:focus {
     margin-left: 0;
     width: 447px;
   }
+
   .about-section .headline-connect {
     margin-left: 0;
   }
-  
+
   .about-section .social-icons {
     margin-left: 45px;
     width: 201px;
-    height: 40px;
+    height: 120px;
   }
-  
+
   .about-section button {
     margin-left: 45px;
     margin-top: 0;
   }
-  
+
   .Languages {
     margin-top: -28px;
     font-weight: 400;
@@ -568,13 +568,13 @@ textarea:focus {
     line-height: 24px;
     color: #344563;
   }
-  
+
   .my-about-skill-body-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
-  
+
   .my-about-skill-body {
     padding: 20px;
     height: 127px;
@@ -584,17 +584,17 @@ textarea:focus {
     gap: 17px;
     align-items: flex-start;
   }
-  
-  .about-skill-text {
+
+  .my-about-skill-text {
     margin-left: -28px;
   }
-  
+
   .social-media-connect {
     position: absolute;
     left: 42px;
     margin-top: 190px;
   }
-  
+
   .my-contact-me-form-container {
     background-color: #6070ff;
     background-image: url(./assets/desktop-contact.png);
