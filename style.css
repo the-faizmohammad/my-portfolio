@@ -502,6 +502,26 @@ textarea:focus {
     color: #344563;
     margin-left: 65px;
     width: 735px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    75% {
+      font-size: 100%;
+      margin-left: 25%;
+      width: 100%;
+    }
+    
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .headline-connect {
