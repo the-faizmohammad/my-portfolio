@@ -70,7 +70,7 @@ header {
   padding-bottom: 10px;
   border-radius: 0 0 0 4em;
   background-color: #fff;
-  background-image: url(./assets/header-shape.png);
+  background-image: url(./assets/header-mobile.png);
   background-size: 100%;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@ button[disabled] {
   padding: 3em;
   border-radius: 5em 0 0 0;
   background-color: #6070ff;
-  background-image: url(./assets/contact\ form\ shapes-mobile.png);
+  background-image: url(./assets/contact-bg.png);
   background-repeat: no-repeat;
   background-position-x: right;
 }
@@ -435,7 +435,7 @@ textarea:focus {
   .my-headline-main {
     border-radius: 0 0 0 4em;
     background-color: #fff;
-    background-image: url(./assets/newbg.png);
+    background-image: url(./assets/desktop-bg.png);
     background-size: 90%;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -597,7 +597,7 @@ textarea:focus {
   
   .my-contact-me-form-container {
     background-color: #6070ff;
-    background-image: url(./assets/contact\ form\ background\ shapes.png);
+    background-image: url(./assets/desktop-contact.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
