@@ -26,7 +26,7 @@ ul {
 }
 
 body {
-  width: 101vw;
+  width: 100%;
   background-color: #f7f7f9;
   overflow-x: hidden;
   position: relative;
@@ -447,9 +447,10 @@ textarea:focus {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    gap: 12px;
-    width: 754px;
-    height: 268px;
+    gap: 24px;
+    width: 1000px;
+    height: 320px;
+    left:0px;
   }
 
   .menu-icon {
@@ -501,6 +502,7 @@ textarea:focus {
     line-height: 25px;
     color: #344563;
     margin-left: 65px;
+    width: 735px;
   }
 
   .headline-connect {
@@ -534,7 +536,7 @@ textarea:focus {
   }
 
   .my-about-headline {
-    width: 107%;
+    width: 40%;
   }
 
   .my-heading-large {
@@ -559,6 +561,10 @@ textarea:focus {
   .about-section button {
     margin-left: 45px;
     margin-top: 0;
+  }
+
+  .my-about-skills-container{
+    width:60%;
   }
 
   .Languages {
@@ -608,5 +614,9 @@ textarea:focus {
 
   .contact-me-form-text-input {
     border-radius: 0;
+  }
+
+  .my-contact-me-form-button {
+    align-self: center;
   }
 }
