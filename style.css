@@ -157,6 +157,10 @@ i {
   padding: 1em 1em 2em 1em;
 }
 
+.my-works-card:hover {
+  transform: scale(1.1);
+}
+
 .my-works-card > img {
   width: 100%;
 }
@@ -511,13 +515,13 @@ textarea:focus {
       margin-left: 100%;
       width: 100%;
     }
-  
+
     75% {
       font-size: 100%;
       margin-left: 25%;
       width: 100%;
     }
-    
+
     to {
       margin-left: 0%;
       width: 100%;
