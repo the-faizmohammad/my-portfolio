@@ -477,7 +477,7 @@ textarea:focus {
   .social-icons {
     margin: 20px;
     margin-left: 55px;
-    margin-top: 10px;
+    margin-top: -15px;
   }
 
   header {
