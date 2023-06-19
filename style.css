@@ -157,7 +157,6 @@ i {
   padding: 1em 1em 2em 1em;
 }
 
-<<<<<<< animation-pair-program
 .my-works-card:hover {
   transform: scale(1.1);
 }
@@ -166,12 +165,6 @@ i {
   width: 100%;
 }
 
-=======
-.my-works-card > img {
-  width: 100%;
-}
-
->>>>>>> main
 .works-card-heading-large {
   font-weight: 710;
   font-size: 42px;
@@ -513,7 +506,6 @@ textarea:focus {
     color: #344563;
     margin-left: 65px;
     width: 735px;
-<<<<<<< animation-pair-program
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -534,8 +526,6 @@ textarea:focus {
       margin-left: 0%;
       width: 100%;
     }
-=======
->>>>>>> main
   }
 
   .headline-connect {
