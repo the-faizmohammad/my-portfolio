@@ -1,0 +1,655 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu-icon {
+  width: 42px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  background-color: #f7f7f9;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.my-heading-large {
+  font-size: 2.6rem;
+  line-height: 53px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+header {
+  background-color: #fff;
+  color: #6070ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.navigation-bar {
+  display: none;
+}
+
+.my-logo > a {
+  text-decoration: none;
+  color: inherit;
+  left: 77px;
+}
+
+.my-headline-main {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0 0 0 4em;
+  background-color: #fff;
+  background-image: url(./assets/header-mobile.png);
+  background-size: 100%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  max-height: 820px;
+  min-height: 555px;
+}
+
+.headline-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.my-about-headline {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.headline-text {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
+  font-weight: 705;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.my-headline-paragraph {
+  margin: 10px 0;
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
+  font-weight: 401;
+  font-size: 18px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.headline-connect {
+  margin: 10px 0;
+  color: #7f8cff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #505f79;
+  list-style: none;
+}
+
+.social-icons > a,
+i {
+  text-decoration: none;
+  color: #505f79;
+  font-size: 1.26rem;
+  padding-right: 1em;
+}
+
+/* Works Section Styling Starts Here */
+.my-works {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.my-works-card {
+  color: #172b4d;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 8em 7% 0 7%;
+  padding: 1em 1em 2em 1em;
+}
+
+<<<<<<< animation-pair-program
+.my-works-card:hover {
+  transform: scale(1.1);
+}
+
+.my-works-card > img {
+  width: 100%;
+}
+
+=======
+.my-works-card > img {
+  width: 100%;
+}
+
+>>>>>>> main
+.works-card-heading-large {
+  font-weight: 710;
+  font-size: 42px;
+  line-height: 52px;
+  padding: 0.26em 0;
+  font-style: normal;
+}
+
+.works-card-client {
+  display: flex;
+  align-items: center;
+  padding: 0.26em 0;
+}
+
+.works-card-client > p {
+  font-weight: 600;
+}
+
+.my-works-card-client-role {
+  color: #6b778c;
+  font-style: normal;
+  font-weight: 405;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.my-works-card-client-year {
+  color: #6b778c;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  width: 39px;
+}
+
+.works-card-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.26em 0;
+}
+
+.works-card-client > i {
+  color: #c1c7d0;
+  font-size: 0.5rem;
+}
+
+.my-works-card-client-counter {
+  font-size: 0.76em;
+  padding: 0 0.75em;
+  color: #7a869a;
+}
+
+.works-card-skills {
+  display: flex;
+  color: #6070ff;
+  margin: 0.25em 0;
+  list-style-type: none;
+  border-radius: 9px;
+  font-weight: 502;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.skill-list {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin: 0 0.5rem 0 0;
+  padding: 0.25em 0.75em;
+  border-radius: 8px;
+  font-weight: 50;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  width: auto;
+  padding: 12px;
+  margin: 1em 0;
+  background: #fff;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6070ff;
+  box-shadow: 0 0.5em 1em #4053fc3d;
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
+
+/* Works Section Styling Ends Here */
+
+/* About Section Starts Here */
+.about-section {
+  background-color: #fff;
+  border-radius: 0 6em 0 0;
+  margin: 8em 0 0 0;
+}
+
+.my-headline-skill-container {
+  padding: 5em 7% 0 7%;
+}
+
+.my-about-heading-small {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.Languages {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: normal;
+  margin-left: -20px;
+  margin-right: -12px;
+}
+
+.Languages li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding-right: 150px;
+  margin-top: 8px;
+}
+
+.my-about-skills-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  width: 100%;
+  height: 600px;
+}
+
+.my-about-skills-container > hr {
+  height: 2px;
+  background: #dfe1e6;
+  border: none;
+}
+
+.my-about-skill-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em 2em 0;
+}
+
+.my-about-skill-body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f7f7f9;
+  border-radius: 0.5em;
+  margin: 0.5em 0;
+  padding: 0.5em;
+}
+
+.my-about-skill-text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  padding-left: 1em;
+  line-height: 20px;
+  color: #253858;
+}
+
+/* About Section Ends Here */
+
+/* Contact Me starts here */
+.my-contact-me-form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6em 0 0 0;
+  padding: 3em;
+  border-radius: 5em 0 0 0;
+  background-color: #6070ff;
+  background-image: url(./assets/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.my-contact-me-form-heading {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+}
+
+.my-contact-me-form-paragraph {
+  text-align: center;
+  margin-top: 0.75em;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.75em;
+}
+
+.contact-me-form > input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #f7f7f9;
+  box-shadow: 0 0 2px #f7f7f9;
+}
+
+.contact-me-form-text-input {
+  margin-top: 0.75em;
+  padding: 0.75em;
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+
+.my-contact-me-form-button {
+  align-self: flex-start;
+}
+
+/* Contact me ends here */
+
+@media screen and (min-width: 768px) {
+  .my-logo > a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+    margin: 0 0 0 100px;
+    font-size: 18px;
+  }
+
+  .my-headline-main {
+    border-radius: 0 0 0 4em;
+    background-color: #fff;
+    background-image: url(./assets/desktop-bg.png);
+    background-size: 90%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .headline-container {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    width: 1000px;
+    height: 320px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navigation-bar {
+    position: absolute;
+    top: 10px;
+    right: 120px;
+    display: flex;
+    margin-top: 25px;
+    padding: 0;
+    color: #6070ff;
+    font-size: 18px;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #344563;
+    font-size: 15px;
+  }
+
+  .social-icons {
+    margin: 20px;
+    margin-left: 55px;
+    margin-top: -15px;
+  }
+
+  header {
+    padding: 23px;
+    padding-bottom: 75px;
+  }
+
+  .headline-text {
+    margin: 10px 64px;
+    font-size: 48px;
+    align-items: center;
+    color: #172b4d;
+  }
+
+  .my-headline-paragraph {
+    margin: 10px 0;
+    font-family: 'Poppins'sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #344563;
+    margin-left: 65px;
+    width: 735px;
+<<<<<<< animation-pair-program
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+
+    75% {
+      font-size: 100%;
+      margin-left: 25%;
+      width: 100%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+=======
+>>>>>>> main
+  }
+
+  .headline-connect {
+    margin: 0 60px;
+  }
+
+  .my-works-card > img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .my-works-card:nth-child(even) > img {
+    order: 2;
+  }
+
+  .my-works-card:nth-child(even) > .works-card-main {
+    order: 1;
+  }
+
+  .my-works-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5em;
+    padding: 1em;
+  }
+
+  .my-headline-skill-container {
+    display: flex;
+    flex-direction: row;
+    height: 592px;
+  }
+
+  .my-about-headline {
+    width: 40%;
+  }
+
+  .my-heading-large {
+    font-size: 41px;
+  }
+
+  .about-section .my-headline-paragraph {
+    margin-left: 0;
+    width: 447px;
+  }
+
+  .about-section .headline-connect {
+    margin-left: 0;
+  }
+
+  .about-section .social-icons {
+    margin-left: 45px;
+    width: 201px;
+    height: 120px;
+  }
+
+  .about-section button {
+    margin-left: 45px;
+    margin-top: 0;
+  }
+
+  .my-about-skills-container {
+    width: 60%;
+  }
+
+  .Languages {
+    margin-top: -28px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .my-about-skill-body-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .my-about-skill-body {
+    padding: 20px;
+    height: 127px;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: flex-start;
+  }
+
+  .my-about-skill-text {
+    margin-left: -28px;
+  }
+
+  .social-media-connect {
+    position: absolute;
+    left: 42px;
+    margin-top: 190px;
+  }
+
+  .my-contact-me-form-container {
+    background-color: #6070ff;
+    background-image: url(./assets/desktop-contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    align-content: center;
+    padding: 10% 25%;
+    margin-top: 0;
+  }
+
+  .contact-me-form-text-input {
+    border-radius: 0;
+  }
+
+  .my-contact-me-form-button {
+    align-self: center;
+  }
+}
