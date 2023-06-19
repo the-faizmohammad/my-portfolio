@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -62,6 +63,12 @@
 ### Key Features <a name="key-features"></a>
 
 - **Display colorfull text**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo link](https://the-faizmohammad.github.io/my-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
