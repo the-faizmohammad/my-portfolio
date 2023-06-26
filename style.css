@@ -15,6 +15,60 @@ ul {
   list-style: none;
 }
 
+/* start mobile-menu */
+
+.show-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em 0.75em;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: rgba(96, 112, 255, 0.9);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  backdrop-filter: blur(4px);
+}
+
+.hide-menu {
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  padding: 0;
+}
+
+.show-menu > ul > li {
+  padding: 0.5em 0;
+}
+
+.menu-icon-button {
+  display: inline;
+  cursor: pointer;
+}
+
+.nav-link:nth-child(even) {
+  margin: 0 0.5em;
+}
+
+/* finish mobile menu */
+
 .menu-icon {
   width: 42px;
   height: 40px;
