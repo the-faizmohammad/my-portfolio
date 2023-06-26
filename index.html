@@ -11,16 +11,25 @@
   <body>
     <!--my header section starts-->
     <header>
-      <h2 class="my-logo">Faiz M</h2>
+      <h2 class="my-logo"><a href="#">Faiz</a></h2>
       <nav>
         <div class="menu-icon">
-          &#9776;
+          <p id="show-nav" class="menu-icon-button">
+            &#9776
+          </p>
+            
+          <!-- mobile-menue start -->
+          <div id="my-mobile-menu" class="hide-menu">
+            <button id="hide-nav" class="close-btn">
+              X</button>
+            <ul id="mobile-nav-links">
+              <li><a href="#my-portfolio">Portfolio</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <!-- mobile-menue finish -->
         </div>
-        <ul class="navigation-bar">
-          <li class="nav-item"><a href="#" >Portfolio</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
-        </ul>
       </nav>
     </header>
     <!-- my header section ends-->
