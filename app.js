@@ -1,26 +1,20 @@
-const showNav = document.getElementById("show-nav");
-const hideNav = document.getElementById("hide-nav");
-const mobileMenuLinks = document.getElementById("mobile-nav-links");
-const mobileMenu = document.getElementById("my-mobile-menu");
+const navShow = document.getElementById("show-nav");
+const navHide = document.getElementById("hide-nav");
+const mobMenuLinks = document.querySelectorAll("#mobmenu-links li a");
+const mobileMenu = document.getElementById("mobile-menu");
+//Aamer code
 
-function toggleMenu() {
-  mobileMenu.classList.toggle("show-menu");
-}
+//Aamer code
 
-function scrollToSection(event) {
-  event.preventDefault();
+mobMenuLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
 
-  const link = event.target;
-  const targetID = link.getAttribute("href").substring(1);
-  const targetSection = document.getElementById(targetID);
-  targetSection.scrollIntoView({ behavior: "smooth" });
-  mobileMenu.classList.remove("show-menu");
-}
-
-showNav.addEventListener("click", toggleMenu);
-hideNav.addEventListener("click", toggleMenu);
-mobileMenuLinks.addEventListener("click", toggleMenu);
-
-Array.from(mobileMenuLinks).forEach(function(link) {
-  link.addEventListener("click", scrollToSection);
+    const targetID = link.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetID);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+    mobileMenu.classList.remove("mobile-menu--show");
+  });
 });
