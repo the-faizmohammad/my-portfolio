@@ -15,6 +15,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
     - [🚀 Live Demo](#live-demo)
+    -  - [Loom Video Walkthrough](#video-walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -69,6 +70,12 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo link](https://the-faizmohammad.github.io/my-portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Loom Video Walkthrough <a name="video-walkthrough"></a>
+
+- [Loom Video Walkthrough](https://www.loom.com/share/9d3ff1f01ff942e481c790bc9cb9fb7f?sid=32f7e238-473e-462d-9014-cde462f62687)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,6 +141,10 @@ Deploy this project on any websever
 - GitHub: [@tan12082001](https://github.com/tan12082001)
 👤 **Ian Kiema**
 - GitHub: [@iankiema] (https://github.com/iankiema)
+👤 **Binyam Yohannes**
+- GitHub: [@binyamolango](https://github.com/binyamolango)
+👤 **Binyam Yohannes**
+- GitHub: [@MohammadYaser](https://github.com/MohammadYaser)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
