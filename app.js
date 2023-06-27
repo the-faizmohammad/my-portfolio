@@ -3,7 +3,9 @@ const navHide = document.getElementById("hide-nav");
 const mobMenuLinks = document.querySelectorAll("#mobmenu-links li a");
 const mobileMenu = document.getElementById("mobile-menu");
 //Aamer code
-
+navShow.addEventListener("click", () => {
+  mobileMenu.classList.toggle("mobile-menu--show");
+});
 //Aamer code
 
 mobMenuLinks.forEach((link) => {
