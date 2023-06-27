@@ -64,10 +64,6 @@ body {
   backdrop-filter: blur(4px);
 }
 
-.mobile-menu--show > ul > li {
-  padding: 0.5em 0;
-}
-
 .mob-nav-menu-butn {
   display: inline;
   cursor: pointer;
@@ -94,7 +90,7 @@ header {
 }
 
 .my-logo {
-font-weight: normal;
+  font-weight: normal;
 }
 
 .my-logo > a {
@@ -360,6 +356,10 @@ button[disabled] {
   border-radius: 8px;
   padding-right: 150px;
   margin-top: 8px;
+}
+
+.mobile-menu--show > ul > li {
+  padding: 0.5em 0;
 }
 
 .my-about-skills-container {
