@@ -6,6 +6,11 @@ const mobileMenu = document.getElementById("mobile-menu");
 navShow.addEventListener("click", () => {
   mobileMenu.classList.toggle("mobile-menu--show");
 });
+
+
+navHide.addEventListener("click", () => {
+  mobileMenu.classList.toggle("mobile-menu--show");
+});
 //Aamer code
 
 mobMenuLinks.forEach((link) => {
