@@ -1,14 +1,14 @@
-const navShow = document.getElementById("show-nav");
-const navHide = document.getElementById("hide-nav");
+const navigationShow = document.getElementById("show-nav");
+const navigationHide = document.getElementById("hide-nav");
 const mobMenuLinks = document.querySelectorAll("#mobmenu-links li a");
 const mobileMenu = document.getElementById("mobile-menu");
-navShow.addEventListener("click", () => {
-  mobileMenu.classList.toggle("mobile-menu--show");
-});
 
-navHide.addEventListener("click", () => {
+const toggleMobileMenu = () => {
   mobileMenu.classList.toggle("mobile-menu--show");
-});
+};
+
+navigationShow.addEventListener("click", toggleMobileMenu);
+navigationHide.addEventListener("click", toggleMobileMenu);
 
 mobMenuLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
