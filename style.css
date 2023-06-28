@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -32,6 +33,42 @@ body {
   position: relative;
 }
 
+/* start mobile-menu */
+.mob-menu-close-icon {
+  color: #fff;
+  align-self: flex-end;
+  padding: 0;
+}
+
+.mob-menu--hide {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.mobile-menu--show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em 0.75em;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background: rgba(96, 112, 255, 0.9);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  backdrop-filter: blur(4px);
+}
+
+.mob-nav-menu-butn {
+  display: inline;
+  cursor: pointer;
+}
+
 .my-heading-large {
   font-size: 2.6rem;
   line-height: 53px;
@@ -50,6 +87,10 @@ header {
 
 .navigation-bar {
   display: none;
+}
+
+.my-logo {
+  font-weight: normal;
 }
 
 .my-logo > a {
@@ -315,6 +356,10 @@ button[disabled] {
   border-radius: 8px;
   padding-right: 150px;
   margin-top: 8px;
+}
+
+.mobile-menu--show > ul > li {
+  padding: 0.5em 0;
 }
 
 .my-about-skills-container {

@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-   <script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous"></script>   
+   <script src="https://kit.fontawesome.com/8c1870b6fa.js" crossorigin="anonymous"></script>
     <title>Faiz-Desktop-Version</title>
   </head>
   <body>
-   
     <!--my header section starts-->
     <header>
-      <h2 class="my-logo"><span style="font-weight: normal;">Faiz M</span></h2>
+      <h2 class="my-logo"><a href="#">Faiz</a></h2>
       <nav>
         <div class="menu-icon">
-          &#9776;
+          <p
+            id="show-nav"
+            class="mob-nav-menu-butn">&#9776;</p>
+          <!--my mobile-menu start -->
+          
+          <div id="mobile-menu" class="mob-menu--hide">
+            <p id="hide-nav" class="mob-menu-close-icon"> x </p>
+            <ul id="mobmenu-links">
+              <li><a href="#my-portfolio"> Portfolio</a></li>
+              <li><a href="#about-me">About</a></li>
+              <li><a href="#contacts">Contact</a></li>
+            </ul>
+          </div>
         </div>
+
+        <!-- my-mobile-menu finish -->
         <ul class="navigation-bar">
-          <li class="nav-item"><a href="#" style="text-decoration: none;">Portfolio</a></li>
-          <li class="nav-item"><a href="#" style="text-decoration: none;">About</a></li>
-          <li class="nav-item"><a href="#" style="text-decoration: none;">Contact</a></li>
+          <li class="nav-item"><a href="#">Portfolio</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
+    
     <!-- my header section ends-->
 
     <!--my headline section starts-->
@@ -58,7 +72,7 @@
     <!--my headline section ends-->
 
     <!--my Card works starts-->
-    <section class="my-works">
+    <section id="my-portfolio" class="my-works">
        
       <ul class="works-cards">
         <!-- my Card 1 starts -->
@@ -168,10 +182,8 @@
               </ul>
             </section>
             <!--my Card works ends-->
-        
-
     <!-- my About Section Starts Here -->
-    <section class="about-section">
+    <section id ="about-me" class="about-section">
       <div class="my-headline-skill-container">
         <div class="my-about-headline">
           <h2 class="my-heading-large">About Myself</h2>
@@ -261,7 +273,7 @@
       </div>
     </section>
     <!-- my Contact Me Section Starts -->
-    <section class="my-contact-me-form-container">
+    <section id ="contacts" class="my-contact-me-form-container">
         <h1 class="my-contact-me-form-heading">
             Contact me
         </h1>
@@ -302,5 +314,7 @@
       </form>    
   </section>
     <!--my Contact Me Section Ends -->
+    <script src= "app.js"> </script>  
+  
   </body>
 </html>
