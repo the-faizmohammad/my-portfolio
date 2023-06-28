@@ -135,6 +135,8 @@ const projects = [
   
   const openBtn1 = document.getElementById('open-all-details-1');
   const openBtn2 = document.getElementById('open-all-details-2');
+  const openBtn3 = document.getElementById('open-all-details-3');
+  const openBtn4 = document.getElementById('open-all-details-4');
 
 
   const cardDetail1 = document.getElementById('card-detail-1');
