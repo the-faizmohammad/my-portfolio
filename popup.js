@@ -133,16 +133,7 @@ const projects = [
   });
   // Modal Popup Ends Here
   
-  const openBtn1 = document.getElementById('open-all-details-1');
-  const openBtn2 = document.getElementById('open-all-details-2');
-  const openBtn3 = document.getElementById('open-all-details-3');
-  const openBtn4 = document.getElementById('open-all-details-4');
-  
-  const closebtn1 = document.getElementById('card-detail-close-1');
-  const closebtn2 = document.getElementById('card-detail-close-2');
-  const closebtn3 = document.getElementById('card-detail-close-3');
-  const closebtn4 = document.getElementById('card-detail-close-4');
-  
+  // write code above
   const cardDetail1 = document.getElementById('card-detail-1');
   const cardDetail2 = document.getElementById('card-detail-2');
   const cardDetail3 = document.getElementById('card-detail-3');
