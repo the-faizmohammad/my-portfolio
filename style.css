@@ -49,7 +49,7 @@ body {
 .mobile-menu--show {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 1em 0.75em;
@@ -687,4 +687,140 @@ textarea:focus {
   .my-contact-me-form-button {
     align-self: center;
   }
+}
+
+/* Card detais starts here */
+
+.card-detail {
+  display: none;
+}
+
+.blur {
+  overflow-y: hidden;
+}
+
+.card-detail--show {
+  display: block;
+  z-index: 15;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(193, 199, 208, 0.7);
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+  margin: auto 0;
+}
+
+.card-detail-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #172b4d;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1em;
+  margin: 20px 10px;
+  padding: 1em;
+}
+
+.card-detail-header {
+  justify-content: space-between;
+}
+
+.card-detail-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 52px;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.card-detail-cross-icon {
+  padding: 0;
+}
+
+.card-detail-display-img-container {
+  width: 100%;
+  height: auto;
+}
+
+.card-detail-display-img-container > img {
+  width: 100%;
+}
+
+.card-detail-body {
+  margin: 2em 0;
+}
+
+.card-detail-body-tags {
+  margin: 0.25em 0;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.card-detail-body-tag {
+  color: #6070ff;
+  background-color: #ebebff;
+  margin: 0 0.5rem 0.5em 0;
+  padding: 0.25em 0.75em;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.card-detail-body-right-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  border-top: 2px solid rgba(235, 236, 240, 1);
+}
+
+.card-detail-button {
+  font-size: 15px;
+  padding: 0.5em 0.75em;
+  align-content: center;
+}
+
+.card-detail-button > i {
+  padding: 0;
+  font-size: 0.85em;
+  color: inherit;
+}
+
+/* Detail Section Ends Here */
+
+@media screen and (min-width: 768px) {
+  /* Details Card Starts Here */
+  .card-detail-display-img-container > img {
+    width: 100%;
+  }
+
+  .card-detail {
+    flex-direction: column;
+  }
+
+  .card-detail-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+  }
+
+  .card-detail-button {
+    min-width: 139px;
+  }
+
+  .card-detail-inner {
+    margin: 5% 8%;
+  }
+
+  /* Card Ends Here */
 }
