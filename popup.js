@@ -50,22 +50,31 @@ const projects = [
 ];
 
 function showProjectDetails(index) {
-  const popup = document.getElementById(`card-detail-${index + 1}`);
-  const body = document.getElementById('body');
-  popup.classList.add('card-detail--show');
-  body.classList.add('blur');
-
-  projects.forEach((project, i) => {
-    if (i === index) {
-      project.card.classList.add('active');
-      project.popup.classList.add('active');
-    } else {
-      project.card.classList.remove('active');
-      project.popup.classList.remove('active');
-    }
-  });
-}
-
+    const popupContainer = document.getElementById('popup-container');
+    const popup = popupContainer.querySelector(`#card-detail-${index + 1}`);
+    const body = document.getElementById('body');
+  
+    // Hide all other popups
+    const allPopups = popupContainer.querySelectorAll('.card-detail');
+    allPopups.forEach((p) => {
+      p.classList.remove('card-detail--show');
+    });
+  
+    // Show the selected popup
+    popup.classList.add('card-detail--show');
+    body.classList.add('blur');
+  
+    // Update the active class for the corresponding card
+    const allCards = document.querySelectorAll('.my-works-card');
+    allCards.forEach((card, i) => {
+      if (i === index) {
+        card.classList.add('active');
+      } else {
+        card.classList.remove('active');
+      }
+    });
+  }
+  
 function hideProjectDetails(index) {
   const popup = document.getElementById(`card-detail-${index + 1}`);
   const body = document.getElementById('body');
