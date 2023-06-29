@@ -49,138 +49,58 @@ const projects = [
   },
 ];
 
-function createCard(project, index) {
-  const mycard = document.createElement('li');
-  mycard.classList.add('my-works-card');
-  mycard.id = `my-works-card-${index + 1}`;
-  mycard.innerHTML = `<img src='${project.featuredImg}' alt='Recent Work'>
-      <div class='works-card-main'>
-          <h3 class='works-card-heading-large'>${project.name}</h3>
-          <div class='d-flex works-card-client'>
-              <p class='paragraph'>${project.details.company}</p>
-              <i class='fa-solid fa-circle my-works-card-client-counter'></i>
-              <p class='my-works-card-client-role paragraph'>${
-  project.details.profile
-}</p>
-              <i class='fa-solid fa-circle my-works-card-client-counter'></i>
-              <p class='my-works-card-client-year paragraph'>${
-  project.details.year
-}</p>
-          </div>
-          <p class='paragraph works-card-paragraph'>${project.Description}</p>
-          <ul class="works-card-skills">
-              <li class="skill-list">${project.language[0]}</li>
-              <li class="skill-list">${project.language[1]}</li>
-              <li class="skill-list">${project.language[2]}</li>
-          </ul>
-          <button onclick="showProjectDetails(${index + 1})">See Project</button>
-      </div>`;
-  return mycard;
-}
-
-function createPopup(project, index) {
-  const popup = document.createElement('div');
-  popup.classList.add('card-detail');
-  popup.id = `card-detail-${index + 1}`;
-  popup.innerHTML = `<div class='card-detail-inner'>
-      <div class='d-flex card-detail-header'>
-          <div>
-              <h3 class='card-detail-heading'>${project.name}</h3>
-              <div class='d-flex works-card-client'>
-                  <p class='paragraph'>${project.details.company}</p>
-                  <i class='fa-solid fa-circle my-works-card-client-counter'></i>
-                  <p class='works-card-client-role paragraph'>${
-  project.details.profile
-}</p>
-                  <i class='fa-solid fa-circle my-works-card-client-counter'></i>
-                  <p class='my-works-card-client-year paragraph'>${
-  project.details.year
-}</p>
-              </div>
-          </div>
-          <i id='card-detail-close-${
-  index + 1
-}' onclick="hideProjectDetails(${index + 1})" class='fa-solid fa-xmark card-detail-cross-icon'></i>
-      </div>
-      <div class='card-detail-display-img-container'>
-          <img class='' src='${project.featuredImg}' alt='Recent Work'>
-      </div>
-      <div class='card-detail-body'>
-          <p class='paragraph'>${project.Description}</p>
-          <div class='card-detail-body-right'>
-              <ul class="d-flex card-detail-body-tags">
-                <li class="card-detail-body-tag">${project.language[0]}</li>
-                <li class="card-detail-body-tag">${project.language[1]}</li>
-                <li class="card-detail-body-tag">${project.language[2]}</li>
-              </ul>
-              <div class='card-detail-body-right-button-container'>
-                  <button class='card-detail-button' src='${
-  project.seeLive
-}'>See Live
-                   <i class='fa-solid fa-arrow-up-right-from-square'></i></button>
-                  <button class='card-detail-button'  src='${
-  project.seeSource
-}'>
-                  See Source <i class='fa-brands fa-github'></i></button>
-              </div>
-          </div>
-      </div>
-    </div>`;
-  return popup;
-}
-
 function showProjectDetails(index) {
-    const popup = document.getElementById(`card-detail-${index + 1}`);
-    const body = document.getElementById('body');
-    popup.classList.add('card-detail--show');
-    body.classList.add('blur');
-  
-    projects.forEach((project, i) => {
-      if (i === index) {
-        project.card.classList.add('active');
-        project.popup.classList.add('active');
-      } else {
-        project.card.classList.remove('active');
-        project.popup.classList.remove('active');
-      }
-    });
-  }
-  
-  function hideProjectDetails(index) {
-    const popup = document.getElementById(`card-detail-${index + 1}`);
-    const body = document.getElementById('body');
-    popup.classList.remove('card-detail--show');
-    body.classList.remove('blur');
-  
-    projects.forEach((project, i) => {
-      if (i === index) {
-        project.card.classList.remove('active');
-        project.popup.classList.remove('active');
-      }
-    });
-  }
-  
-  function renderProjects() {
-    const container = document.getElementById('works-cards');
-    const popupContainer = document.getElementById('popup-container');
-  
-    projects.forEach((project, index) => {
-      const mycard = document.createElement('li');
-      mycard.classList.add('my-works-card');
-      mycard.id = `my-works-card-${index + 1}`;
-      mycard.innerHTML = `<img src='${project.featuredImg}' alt='Recent Work'>
+  const popup = document.getElementById(`card-detail-${index + 1}`);
+  const body = document.getElementById('body');
+  popup.classList.add('card-detail--show');
+  body.classList.add('blur');
+
+  projects.forEach((project, i) => {
+    if (i === index) {
+      project.card.classList.add('active');
+      project.popup.classList.add('active');
+    } else {
+      project.card.classList.remove('active');
+      project.popup.classList.remove('active');
+    }
+  });
+}
+
+function hideProjectDetails(index) {
+  const popup = document.getElementById(`card-detail-${index + 1}`);
+  const body = document.getElementById('body');
+  popup.classList.remove('card-detail--show');
+  body.classList.remove('blur');
+
+  projects.forEach((project, i) => {
+    if (i === index) {
+      project.card.classList.remove('active');
+      project.popup.classList.remove('active');
+    }
+  });
+}
+
+function renderProjects() {
+  const container = document.getElementById('works-cards');
+  const popupContainer = document.getElementById('popup-container');
+
+  projects.forEach((project, index) => {
+    const mycard = document.createElement('li');
+    mycard.classList.add('my-works-card');
+    mycard.id = `my-works-card-${index + 1}`;
+    mycard.innerHTML = `<img src='${project.featuredImg}' alt='Recent Work'>
         <div class='works-card-main'>
             <h3 class='works-card-heading-large'>${project.name}</h3>
             <div class='d-flex works-card-client'>
                 <p class='paragraph'>${project.details.company}</p>
                 <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                 <p class='my-works-card-client-role paragraph'>${
-                  project.details.profile
-                }</p>
+  project.details.profile
+}</p>
                 <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                 <p class='my-works-card-client-year paragraph'>${
-                  project.details.year
-                }</p>
+  project.details.year
+}</p>
             </div>
             <p class='paragraph works-card-paragraph'>${project.Description}</p>
             <ul class="works-card-skills">
@@ -190,11 +110,11 @@ function showProjectDetails(index) {
             </ul>
             <button onclick="showProjectDetails(${index + 1})">See Project</button>
         </div>`;
-  
-      const popup = document.createElement('div');
-      popup.classList.add('card-detail');
-      popup.id = `card-detail-${index + 1}`;
-      popup.innerHTML = `<div class='card-detail-inner'>
+
+    const popup = document.createElement('div');
+    popup.classList.add('card-detail');
+    popup.id = `card-detail-${index + 1}`;
+    popup.innerHTML = `<div class='card-detail-inner'>
         <div class='d-flex card-detail-header'>
             <div>
                 <h3 class='card-detail-heading'>${project.name}</h3>
@@ -202,17 +122,17 @@ function showProjectDetails(index) {
                     <p class='paragraph'>${project.details.company}</p>
                     <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                     <p class='works-card-client-role paragraph'>${
-                      project.details.profile
-                    }</p>
+  project.details.profile
+}</p>
                     <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                     <p class='my-works-card-client-year paragraph'>${
-                      project.details.year
-                    }</p>
+  project.details.year
+}</p>
                 </div>
             </div>
             <i id='card-detail-close-${
-              index + 1
-            }' onclick="hideProjectDetails(${index + 1})" class='fa-solid fa-xmark card-detail-cross-icon'></i>
+  index + 1
+}' onclick="hideProjectDetails(${index + 1})" class='fa-solid fa-xmark card-detail-cross-icon'></i>
         </div>
         <div class='card-detail-display-img-container'>
             <img class='' src='${project.featuredImg}' alt='Recent Work'>
@@ -227,36 +147,34 @@ function showProjectDetails(index) {
                 </ul>
                 <div class='card-detail-body-right-button-container'>
                     <button class='card-detail-button' src='${
-                      project.seeLive
-                    }'>See Live
+  project.seeLive
+}'>See Live
                      <i class='fa-solid fa-arrow-up-right-from-square'></i></button>
                     <button class='card-detail-button'  src='${
-                      project.seeSource
-                    }'>
+  project.seeSource
+}'>
                     See Source <i class='fa-brands fa-github'></i></button>
                 </div>
             </div>
         </div>
       </div>`;
-  
-      container.appendChild(mycard);
-      popupContainer.appendChild(popup);
-  
-      mycard.addEventListener('click', () => {
-        showProjectDetails(index);
-      });
-  
-      popup.querySelector('#card-detail-close-' + (index + 1)).addEventListener('click', () => {
-        hideProjectDetails(index);
-      });
-  
-      if (index === 0) {
-        mycard.classList.add('active');
-        popup.classList.add('active');
-      }
+
+    container.appendChild(mycard);
+    popupContainer.appendChild(popup);
+
+    mycard.addEventListener('click', () => {
+      showProjectDetails(index);
     });
-  }
-  
-  renderProjects();
-  
-    
+
+    popup.querySelector(`#card-detail-close-${index + 1}`).addEventListener('click', () => {
+      hideProjectDetails(index);
+    });
+
+    if (index === 0) {
+      mycard.classList.add('active');
+      popup.classList.add('active');
+    }
+  });
+}
+
+renderProjects();
