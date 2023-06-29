@@ -143,7 +143,8 @@ Deploy this project on any websever
 - GitHub: [@iankiema] (https://github.com/iankiema)
 👤 **Binyam Yohannes**
 - GitHub: [@binyamolango](https://github.com/binyamolango)
-👤 **Binyam Yohannes**
+- 
+👤 **Mohammad Yaser**
 - GitHub: [@MohammadYaser](https://github.com/MohammadYaser)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
