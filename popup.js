@@ -49,51 +49,7 @@ const projects = [
   },
 ];
 
-function showProjectDetails(index) {
-  const popupContainer = document.getElementById('popup-container');
-  const popup = popupContainer.querySelector(`#card-detail-${index + 1}`);
-  const body = document.getElementById('body');
-
-  // Hide all other popups
-  const allPopups = popupContainer.querySelectorAll('.card-detail');
-  allPopups.forEach((p) => {
-    p.classList.remove('card-detail--show');
-  });
-
-  // Show the selected popup
-  popup.classList.add('card-detail--show');
-  body.classList.add('blur');
-
-  // Update the active class for the corresponding card
-  const allCards = document.querySelectorAll('.my-works-card');
-  allCards.forEach((card, i) => {
-    if (i === index) {
-      card.classList.add('active');
-    } else {
-      card.classList.remove('active');
-    }
-  });
-}
-
-function hideProjectDetails(index) {
-  const popup = document.getElementById(`card-detail-${index + 1}`);
-  const body = document.getElementById('body');
-  popup.classList.remove('card-detail--show');
-  body.classList.remove('blur');
-
-  projects.forEach((project, i) => {
-    if (i === index) {
-      project.card.classList.remove('active');
-      project.popup.classList.remove('active');
-    }
-  });
-}
-
-function renderProjects() {
-  const container = document.getElementById('works-cards');
-  const popupContainer = document.getElementById('popup-container');
-
-  projects.forEach((project, index) => {
+function createCard(project, index) {
     const mycard = document.createElement('li');
     mycard.classList.add('my-works-card');
     mycard.id = `my-works-card-${index + 1}`;
@@ -104,12 +60,12 @@ function renderProjects() {
                 <p class='paragraph'>${project.details.company}</p>
                 <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                 <p class='my-works-card-client-role paragraph'>${
-  project.details.profile
-}</p>
+    project.details.profile
+  }</p>
                 <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                 <p class='my-works-card-client-year paragraph'>${
-  project.details.year
-}</p>
+    project.details.year
+  }</p>
             </div>
             <p class='paragraph works-card-paragraph'>${project.Description}</p>
             <ul class="works-card-skills">
@@ -117,9 +73,12 @@ function renderProjects() {
                 <li class="skill-list">${project.language[1]}</li>
                 <li class="skill-list">${project.language[2]}</li>
             </ul>
-            <button onclick="showProjectDetails(${index + 1})">See Project</button>
+            <button class="see-project-button">See Project</button>
         </div>`;
-
+    return mycard;
+  }
+  
+  function createPopup(project, index) {
     const popup = document.createElement('div');
     popup.classList.add('card-detail');
     popup.id = `card-detail-${index + 1}`;
@@ -131,17 +90,17 @@ function renderProjects() {
                     <p class='paragraph'>${project.details.company}</p>
                     <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                     <p class='works-card-client-role paragraph'>${
-  project.details.profile
-}</p>
+    project.details.profile
+  }</p>
                     <i class='fa-solid fa-circle my-works-card-client-counter'></i>
                     <p class='my-works-card-client-year paragraph'>${
-  project.details.year
-}</p>
+    project.details.year
+  }</p>
                 </div>
             </div>
             <i id='card-detail-close-${
-  index + 1
-}' onclick="hideProjectDetails(${index + 1})" class='fa-solid fa-xmark card-detail-cross-icon'></i>
+    index + 1
+  }' class='fa-solid fa-xmark card-detail-cross-icon'></i>
         </div>
         <div class='card-detail-display-img-container'>
             <img class='' src='${project.featuredImg}' alt='Recent Work'>
@@ -156,34 +115,66 @@ function renderProjects() {
                 </ul>
                 <div class='card-detail-body-right-button-container'>
                     <button class='card-detail-button' src='${
-  project.seeLive
-}'>See Live
+    project.seeLive
+  }'>See Live
                      <i class='fa-solid fa-arrow-up-right-from-square'></i></button>
                     <button class='card-detail-button'  src='${
-  project.seeSource
-}'>
+    project.seeSource
+  }'>
                     See Source <i class='fa-brands fa-github'></i></button>
                 </div>
             </div>
         </div>
       </div>`;
-
-    container.appendChild(mycard);
-    popupContainer.appendChild(popup);
-
-    mycard.addEventListener('click', () => {
-      showProjectDetails(index);
+    return popup;
+  }
+  
+  function showProjectDetails(index) {
+    const popupContainer = document.getElementById('popup-container');
+    const popup = popupContainer.querySelector(`#card-detail-${index + 1}`);
+    const body = document.getElementById('body');
+  
+    // Hide all other popups
+    const allPopups = popupContainer.querySelectorAll('.card-detail');
+    allPopups.forEach((p) => {
+      p.classList.remove('card-detail--show');
     });
-
-    popup.querySelector(`#card-detail-close-${index + 1}`).addEventListener('click', () => {
-      hideProjectDetails(index);
+  
+    // Show the selected popup
+    popup.classList.add('card-detail--show');
+    body.classList.add('blur');
+  }
+  
+  function hideProjectDetails() {
+    const popupContainer = document.getElementById('popup-container');
+    const body = document.getElementById('body');
+  
+    // Hide all popups
+    const allPopups = popupContainer.querySelectorAll('.card-detail');
+    allPopups.forEach((p) => {
+      p.classList.remove('card-detail--show');
     });
-
-    if (index === 0) {
-      mycard.classList.add('active');
-      popup.classList.add('active');
-    }
-  });
-}
-
-renderProjects();
+  
+    body.classList.remove('blur');
+  }
+  
+  function renderProjects() {
+    const container = document.getElementById('works-cards');
+    const popupContainer = document.getElementById('popup-container');
+  
+    projects.forEach((project, index) => {
+      const card = createCard(project, index);
+      container.appendChild(card);
+  
+      const popup = createPopup(project, index);
+      popupContainer.appendChild(popup);
+  
+      card.querySelector('.see-project-button').addEventListener('click', () => {
+        showProjectDetails(index);
+      });
+  
+      popup.querySelector('.card-detail-cross-icon').addEventListener('click', hideProjectDetails);
+    });
+  }
+  
+  renderProjects();
