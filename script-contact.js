@@ -2,7 +2,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     var emailInput = document.getElementsByName('email')[0];
     var errorMessage = document.getElementById('error-message');
     
-    if (emailInput.value !== emailInput.value.toUpperCase()) { // Make this Lower case
+    if (emailInput.value !== emailInput.value.toLowerCase()) { // Make this Lower case
       event.preventDefault();
       errorMessage.textContent = 'Silly Error.';
     } else {
