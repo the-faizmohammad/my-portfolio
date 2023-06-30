@@ -4,7 +4,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
     if (emailInput.value !== emailInput.value.toLowerCase()) { // Make this Lower case
       event.preventDefault();
-      errorMessage.textContent = 'Silly Error.';
+      errorMessage.textContent = 'Please enter your email in lowercase.';
     } else {
       errorMessage.textContent = '';
     }
